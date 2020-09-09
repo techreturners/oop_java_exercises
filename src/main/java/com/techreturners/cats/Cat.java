@@ -64,3 +64,33 @@ class LionCat implements Cat {
         return "Roar!!!!";
     }
 }
+
+class CheetahCat implements Cat {
+    private Boolean asleep = false;
+    private Integer height = 1100;
+    private String setting = "wild";
+
+    public Boolean isAsleep() {
+        return asleep;
+    }
+
+    public void goToSleep() {
+        this.asleep = true;
+    }
+
+    public void wakeUp() {
+        this.asleep = false;
+    }
+
+    public String getSetting() {
+        return setting;
+    }
+
+    public Integer getAverageHeight() {
+        return height;
+    }
+
+    public String eat() {
+        return "Zzzzzzz";
+    }
+}
