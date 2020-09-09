@@ -36,7 +36,7 @@ public class CatTest {
     @Test
     public void checkCatHeight() {
         Cat domesticCat = new DomesticCat();
-        assertEquals(23, domesticCat.getAverageHeight());
+        assertEquals((Integer)23, domesticCat.getAverageHeight());
     }
 
     @Test
