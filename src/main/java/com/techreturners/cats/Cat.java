@@ -33,6 +33,10 @@ class DomesticCat implements Cat {
     public Integer getAverageHeight() {
         return height;
     }
+
+    public String eat() {
+        return "Purrrrrrr";
+    }
 }
 
 class LionCat implements Cat {
