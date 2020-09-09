@@ -6,6 +6,7 @@ interface Cat {
     public Boolean isAsleep();
     public String getSetting();
     public Integer getAverageHeight();
+    public String eat();
 }
 
 class DomesticCat implements Cat {
@@ -57,5 +58,9 @@ class LionCat implements Cat {
 
     public Integer getAverageHeight() {
         return height;
+    }
+
+    public String eat() {
+        return "Roar!!!!";
     }
 }
