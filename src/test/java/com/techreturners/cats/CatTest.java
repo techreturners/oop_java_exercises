@@ -42,7 +42,7 @@ public class CatTest {
     @Test
     public void checkLionHeight() {
         Cat lionCat = new LionCat();
-        assertEquals(1100, lionCat.getAverageHeight());
+        assertEquals((Integer)1100, lionCat.getAverageHeight());
     }
 
 
