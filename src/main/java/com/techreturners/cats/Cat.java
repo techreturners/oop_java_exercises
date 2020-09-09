@@ -6,11 +6,12 @@ interface Cat {
     public void wakeUp();
     public Boolean isAsleep();
     public String getSetting();
+    public Integer getAverageHeight();
 }
 
 class DomesticCat implements Cat {
     private Boolean asleep = false;
-    private Integer height = 22;
+    private Integer height = 23;
     private String setting = "domestic";
 
     public Boolean isAsleep() {
@@ -27,5 +28,9 @@ class DomesticCat implements Cat {
 
     public String getSetting() {
         return setting;
+    }
+
+    public Integer getAverageHeight() {
+        return height;
     }
 }
