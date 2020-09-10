@@ -9,10 +9,11 @@ interface Cat {
     public String eat();
 }
 
-class DomesticCat implements Cat {
-    private Boolean asleep = false;
-    private Integer height = 23;
-    private String setting = "domestic";
+class BasicCat implements Cat {
+    protected Boolean asleep;
+    protected Integer height;
+    protected String setting;
+    protected String eatSound;
 
     public Boolean isAsleep() {
         return asleep;
@@ -35,66 +36,27 @@ class DomesticCat implements Cat {
     }
 
     public String eat() {
-        return "Purrrrrrr";
+        return eatSound;
     }
 }
 
-class LionCat implements Cat {
-    private Boolean asleep = false;
-    private Integer height = 1100;
-    private String setting = "wild";
-
-    public Boolean isAsleep() {
-        return asleep;
-    }
-
-    public void goToSleep() {
-        this.asleep = true;
-    }
-
-    public void wakeUp() {
-        this.asleep = false;
-    }
-
-    public String getSetting() {
-        return setting;
-    }
-
-    public Integer getAverageHeight() {
-        return height;
-    }
-
-    public String eat() {
-        return "Roar!!!!";
-    }
+class DomesticCat extends BasicCat {
+    this.asleep = false;
+    this.height = 23;
+    this.setting = "domestic";
+    this.eatSound = "Purrrrrrr";
 }
 
-class CheetahCat implements Cat {
+class LionCat extends BasicCat {
     private Boolean asleep = false;
     private Integer height = 1100;
     private String setting = "wild";
+    private String eatSound = "Roar!!!!";
+}
 
-    public Boolean isAsleep() {
-        return asleep;
-    }
-
-    public void goToSleep() {
-        this.asleep = true;
-    }
-
-    public void wakeUp() {
-        this.asleep = false;
-    }
-
-    public String getSetting() {
-        return setting;
-    }
-
-    public Integer getAverageHeight() {
-        return height;
-    }
-
-    public String eat() {
-        return "Zzzzzzz";
-    }
+class CheetahCat extends BasicCat {
+    private Boolean asleep = false;
+    private Integer height = 1100;
+    private String setting = "wild";
+    private String eatSound = "Zzzzzzz";
 }
