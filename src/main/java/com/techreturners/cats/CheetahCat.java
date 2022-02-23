@@ -1,9 +1,9 @@
 package com.techreturners.cats;
 
-public class DomesticCat implements Cat {
+public class CheetahCat implements Cat {
     @Override
     public boolean isAsleep() {
-        return true;
+        return false;
     }
 
     @Override
